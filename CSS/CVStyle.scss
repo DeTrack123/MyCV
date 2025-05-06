@@ -1,0 +1,156 @@
+@import "./_variables";
+
+/* Body styling. */
+body {
+  font-family: $fontFamily;
+  margin: 50px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: $primaryColor;
+  h1 {
+    font-family: $secondaryFontFamily;
+    font-size: 50px;
+    color: $textColor;
+    text-shadow: 2px 2px 2px #0000003d;
+    text-align: center;
+  }
+  #headerContent {
+    background-color: $secondaryColor;
+    max-width: 1050px;
+  }
+  nav {
+    ul {
+      list-style: none;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      background: darken($secondaryColor, 10%);
+      margin: 10px;
+      margin-top: -20px;
+      li {
+        margin: 10px;
+      }
+    }
+  }
+
+  h2,
+  h3 {
+    font-family: $bigFontFamily;
+    font-size: 30px;
+    color: $textColor;
+    box-shadow: 0px 1px;
+    padding: 10px;
+  }
+  /* Paragraph styling. */
+  p {
+    font-family: $paragraphFontFamily;
+    color: $textColor;
+  }
+  /* Link styling and hovering over the link. */
+  a {
+    color: $textColor;
+    text-decoration: none;
+  }
+}
+/* Label, input, form and textarea styling. */
+label {
+  display: block;
+  margin-top: 10px;
+}
+ul {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  color: $textColor;
+  background: lighten($primaryColor, 10%);
+  li {
+    margin: 0 15px;
+  }
+  table li {
+    background-color: none;
+  }
+}
+/* Label, input, form and textarea styling. */
+input,
+textarea {
+  width: 330px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form {
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lighten($primaryColor, 10%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#submitButton {
+  background: $secondaryColor;
+  color: $textColor;
+  border-radius: 10px;
+  margin: 15px 0;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  @include hoverAndCursor();
+}
+
+/* Image styling */
+img {
+  width: 600px;
+  height: 600px;
+  margin: 0px;
+  float: right;
+  border-radius: 100px;
+  border: 3px solid red;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+/* Subheading styling for the work title. */
+#myWorkTitle {
+  font-family: $secondaryFontFamily;
+  color: $textColor;
+  font-size: 45px;
+  font-display: bold;
+  text-align: center;
+}
+/* Div styling to make the paragraph look better. */
+#paragraphContent,
+#headerContent {
+  margin: 10px;
+  background: lighten($secondaryColor, 10%);
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 1050px;
+}
+
+a:hover {
+  @include hoverAndCursor;
+}
+/* Table styling for the table heading and rows. */
+table {
+  width: 100%;
+  border-collapse: separate;
+  margin-top: 20px;
+  padding: 10px;
+  th {
+    background-color: $secondaryColor;
+    color: $textColor;
+    font-family: $secondaryFontFamily;
+    border: 1px solid $textColor;
+    padding: 10px;
+    text-align: center;
+  }
+  td {
+    border: 1px solid $textColor;
+    padding: 10px;
+    text-align: left;
+    color: $textColor;
+  }
+}

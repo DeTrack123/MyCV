@@ -1,0 +1,14 @@
+$primaryColor: #2c3e50;
+$secondaryColor: #3498db;
+$textColor: #ecf0f1;
+$fontFamily: Arial, sans-serif;
+$secondaryFontFamily: Comic Sans MS, sans-serif;
+$bigFontFamily: Magneto, sans-serif;
+$paragraphFontFamily: Verdana, sans-serif;
+
+@mixin hoverAndCursor() {
+    cursor: pointer;
+    border-radius: 5px;
+        &:hover {
+    background: lighten($secondaryColor, 10%);
+}}
