@@ -1,4 +1,4 @@
-$document.ready(function () {
+$(document).ready(function () {
   // Feedback form submission
   $(".feedbackForm").on("submit", function (e) {
     e.preventDefault();
@@ -7,6 +7,7 @@ $document.ready(function () {
     const userName = $(".userName").val();
     const userEmail = $(".userEmail").val();
     const userFeedback = $(".userFeedback").val();
+    console.log(userName, userEmail, userFeedback);
 
     // Create a feedback object
     const feedback = {
@@ -14,6 +15,7 @@ $document.ready(function () {
       email: userEmail,
       feedback: userFeedback,
     };
+    console.log(feedback);
 
     // Get existing feedback from localStorage or initialize an empty array
     const feedbackList = JSON.parse(localStorage.getItem("feedbackList")) || [];
