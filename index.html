@@ -6,6 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <title>Johannes Christoffel Swanepoel CV</title>
 
     <!-- CSS styling the page. I went ahead and added some CSS styling to the page. I know I wasn't supposed to, but I wanted to make my CV look better. I hope that's okay! -->
@@ -264,15 +266,20 @@
     </table>
 
     <!-- Contact form for the user to fill in if user have feedback bout the cv. -->
-    <form>
+    <form class="feedbackForm">
       <!--This link is taking me to a new page 127.0.0.1:5500?index.html after submitting. -->
-      <label > Name and Surname: </label>
-      <input type="text" class="userName"/>
-      <label > Email:</label>
-      <input type="email" class="userEmail"/>
-      <label > Feedback:</label>
-      <textarea class="userFeedback"name="message" rows="4" cols="30"></textarea>
-      <input  type="submit" id="submitButton" value="Submit" />
+      <label> Name and Surname: </label>
+      <input type="text" class="userName" />
+      <label> Email:</label>
+      <input type="email" class="userEmail" />
+      <label> Feedback:</label>
+      <textarea
+        class="userFeedback"
+        name="message"
+        rows="4"
+        cols="30"
+      ></textarea>
+      <input type="submit" id="submitButton" value="Submit" />
     </form>
     <nav>
       <h4 style="text-align: center"><a href="#home">Go to home</a></h4>
